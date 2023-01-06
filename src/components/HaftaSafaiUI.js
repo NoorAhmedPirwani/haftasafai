@@ -1,6 +1,6 @@
 
 
-export function UIHaftaSafai() {
+export function UIHaftaSafai({setView}) {
 
 
     return (
@@ -22,10 +22,10 @@ export function UIHaftaSafai() {
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                                 </ul>
-                                <form class="d-flex">
-                                    <button class="btn btn-outline-success" type="submit">Login</button>
-                                    <button class="btn btn-outline-success" type="submit">Register</button>
-                                </form>
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-success" onClick={() => setView("login")}>Login</button>
+                                    <button class="btn btn-outline-success" onClick={() => setView("register")}>Register</button>
+                                </div>
                             </div>
 
                         </nav>

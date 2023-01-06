@@ -1,9 +1,9 @@
-export function LoginInpage() {
+export function LoginInpage({setView}) {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <form className="form">
+                    <div className="form">
                         <div className="input-group">
                             <table class="table">
                                 <tbody>
@@ -20,7 +20,8 @@ export function LoginInpage() {
                             </table> 
                         </div>
                         <button className="btn btn-secondary">Login</button>
-                    </form>
+                        <button className="btn btn-secondary" onClick={() => setView("home")}>Cancel</button>
+                    </div>
                 </div>
             </div>
 
