@@ -1,0 +1,16 @@
+.main-container {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inputFeild-Name {
+    margin-right: 35px !important;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
